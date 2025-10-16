@@ -43,7 +43,7 @@ export default function Timer({ modo, setModo, debugAtivo }) {
 
       <View style={styles.botoes}>
         <StartPauseButton
-          estaAtivo={estaAtivo}
+          isRunning={estaAtivo}
           onPress={() => setEstaAtivo(!estaAtivo)}
         />
         <ResetButton

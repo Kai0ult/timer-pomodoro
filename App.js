@@ -16,7 +16,7 @@ export default function App() {
 
       <Timer modo={modo} setModo={setModo} debugAtivo={debugAtivo} />
 
-      {/*<ButtonDebug onPress = { () => { setDebugAtivo(true); setTimeout(() => setDebugAtivo(false), 100); }} />*/}
+      <ButtonDebug onPress = { () => { setDebugAtivo(true); setTimeout(() => setDebugAtivo(false), 100); }} />
 
       <Text style={styles.footer}>Tempo padrão: 25 minutos</Text>
     </View>
