@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text } from 'react-native';
 import StartPauseButton from '../components/StartPauseButton';
 import ResetButton from '../components/ResetButton';
+import styles from '../styles/TimerStyle';
 
 export default function Timer({ modo, setModo, debugAtivo }) {
   const [tempoRestante, setTempoRestante] = useState(25 * 60);
@@ -57,19 +58,3 @@ export default function Timer({ modo, setModo, debugAtivo }) {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    alignItems: 'center',
-    marginTop: 50,
-  },
-  timer: {
-    fontSize: 72,
-    color: '#fff',
-    fontWeight: 'bold',
-    marginBottom: 40,
-  },
-  botoes: {
-    flexDirection: 'row',
-    gap: 20,
-  },
-});

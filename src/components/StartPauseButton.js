@@ -1,31 +1,20 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text } from 'react-native';
+import styles from '../styles/StartPauseButtonStyle';
 
 export default function StartPauseButton({ isRunning, onPress }) {
   return (
     <TouchableOpacity
       style={[
-        styles.button,
+        styles.botaoStartPause,
         { backgroundColor: isRunning ? '#f39c12' : '#27ae60' },
       ]}
       onPress={onPress}
     >
-      <Text style={styles.buttonText}>
+      <Text style={styles.textStartPause}>
         {isRunning ? 'Pausar' : 'Iniciar'}
       </Text>
     </TouchableOpacity>
   );
 }
 
-const styles = StyleSheet.create({
-  button: {
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 12,
-  },
-  buttonText: {
-    fontSize: 18,
-    color: '#fff',
-    fontWeight: 'bold',
-  },
-});

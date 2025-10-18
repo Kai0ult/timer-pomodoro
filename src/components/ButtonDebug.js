@@ -1,5 +1,6 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text } from 'react-native';
+import styles from '../styles/ButtonDebugStyle'
 
 export default function DebugButton({ onPress }) {
   return (
@@ -9,17 +10,3 @@ export default function DebugButton({ onPress }) {
   );
 }
 
-const styles = StyleSheet.create({
-  botao: {
-    backgroundColor: '#2c2f3a',
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 10,
-    marginTop: 20,
-  },
-  texto: {
-    color: '#bbb',
-    fontSize: 16,
-    fontWeight: 'bold',
-  },
-});

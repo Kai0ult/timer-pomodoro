@@ -2,15 +2,15 @@
   "expo": {
     "name": "timer-pomodoro",
     "slug": "timer-pomodoro",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/TomatoIcon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
       "image": "./assets/SplashImagem.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#000"
+      "resizeMode": "contain",
+      "backgroundColor": "#1e1e2e"
     },
     "ios": {
       "supportsTablet": true
@@ -18,7 +18,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/TomatoIcon.png",
-        "backgroundColor": "#000"
+        "backgroundColor": "#000000"
       },
       "edgeToEdgeEnabled": true,
       "package": "com.caiosouzaoli.timerpomodoro"
@@ -30,6 +30,12 @@
       "eas": {
         "projectId": "447267c1-8d78-4e04-a1b6-175e9d2b62df"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/447267c1-8d78-4e04-a1b6-175e9d2b62df"
     }
   }
 }
