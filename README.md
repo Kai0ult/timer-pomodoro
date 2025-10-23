@@ -35,14 +35,14 @@ Funcionalidades implementadas neste projeto:
 
 * **[React Native](https://reactnative.dev/):** Framework principal para o desenvolvimento mobile.  
 * **[Expo](https://expo.dev/):** Ferramenta que simplifica o processo de desenvolvimento e execução.  
-* **[expo-audio](https://docs.expo.dev/versions/latest/sdk/audio/):** Biblioteca usada para reprodução do som de alarme.  
+* **[expo-av](https://docs.expo.dev/versions/latest/sdk/av/):** Biblioteca usada para reprodução do som de alarme.  
 * **[JavaScript (ES6+)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript):** Linguagem base utilizada no projeto.
 
 ## 🚀 Como Executar o Projeto
 
 1. Clone este repositório:
     ```bash
-    git clone [https://github.com/seuusuario/pomodoro-timer.git](https://github.com/seuusuario/pomodoro-timer.git)
+    git clone https://github.com/Kai0ult/pomodoro-timer.git
     ```
 
 2. Navegue até o diretório do projeto:
