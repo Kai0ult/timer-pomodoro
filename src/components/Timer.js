@@ -8,21 +8,21 @@ import styles from '../styles/TimerStyle';
 export default function Timer({ modo, setModo, debugAtivo }) {
   const [tempoRestante, setTempoRestante] = useState(25 * 60);
   const [estaAtivo, setEstaAtivo] = useState(false);
-  const [soundObj, setSoundObj] = useState(null); // ⚠️ guarda o som do alarme
+  const [soundObj, setSoundObj] = useState(null); 
 
-  // 🔔 Função para tocar o som de alarme
+  
   async function tocarAlarme() {
     try {
       const { sound } = await Audio.Sound.createAsync(
         require('../../assets/alarm.mp3')
       );
-      setSoundObj(sound); // salva o som no estado
+      setSoundObj(sound); 
       await sound.playAsync();
 
       sound.setOnPlaybackStatusUpdate((status) => {
         if (status.didJustFinish) {
           sound.unloadAsync();
-          setSoundObj(null); // limpa o estado quando terminar
+          setSoundObj(null); 
         }
       });
     } catch (error) {
@@ -30,7 +30,7 @@ export default function Timer({ modo, setModo, debugAtivo }) {
     }
   }
 
-  // ⏱ Controle do timer
+  
   useEffect(() => {
     let intervalo = null;
 
@@ -54,16 +54,16 @@ export default function Timer({ modo, setModo, debugAtivo }) {
     return () => clearInterval(intervalo);
   }, [estaAtivo, tempoRestante, modo]);
 
-  // ⏳ Debug
+  
   useEffect(() => {
     if (debugAtivo) {
       setTempoRestante(1);
     }
   }, [debugAtivo]);
 
-  // ⏏ Função para Start/Pause
+  
   const handleStartPause = async () => {
-    // se o som estiver tocando, para ele imediatamente
+    
     if (soundObj) {
       await soundObj.stopAsync();
       await soundObj.unloadAsync();
@@ -82,7 +82,7 @@ export default function Timer({ modo, setModo, debugAtivo }) {
       <View style={styles.botoes}>
         <StartPauseButton
           isRunning={estaAtivo}
-          onPress={handleStartPause} // ⚠️ usa a nova função
+          onPress={handleStartPause} 
         />
         <ResetButton
           onPress={() => {
