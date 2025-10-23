@@ -47,7 +47,7 @@ Funcionalidades implementadas neste projeto:
 
 2. Navegue até o diretório do projeto:
     ```bash
-    cd pomodoro-timer
+    cd timer-pomodoro
     ```
 
 3. Instale as dependências:
