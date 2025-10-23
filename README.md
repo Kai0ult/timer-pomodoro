@@ -42,7 +42,7 @@ Funcionalidades implementadas neste projeto:
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/Kai0ult/pomodoro-timer.git
+    git clone https://github.com/Kai0ult/timer-pomodoro.git
     ```
 
 2. Navegue até o diretório do projeto:
